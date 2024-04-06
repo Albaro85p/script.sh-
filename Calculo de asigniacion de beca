@@ -1,0 +1,21 @@
+Proceso Clase_8
+	
+	Definir calificacion1 Como Real
+	
+	Escribir " Ingresa tu calificacion: "; Leer calificacion1;
+	
+	Si calificacion1 > 9.5 y calificacion1 < 10 Entonces
+		Escribir "Tu puedes adquirir un 80% de la beca: ", calificacion1
+	SiNo
+		Si calificacion1 > 8.5 y calificacion1 < 9.4 Entonces
+			Escribir "Tu puedes adquirir un 40% de la beca" 
+		SiNo
+			Si calificacion1 > 8.0 y calificacion1 < 8.4 Entonces
+				Escribir "Tu puedes adquirir un 25% de la beca: ", calificacion1
+			SiNo
+				Escribir"Lo sentimos no eres acto para obtener una beca: ", calificacion1
+			Fin Si
+		Fin Si
+	Fin Si
+	
+FinProceso
