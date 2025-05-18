@@ -1,15 +1,18 @@
- /bin/bash
+#!/bin/bash
 
-read -p "Actualiza tu sistema, y/n?: " comando
+read -p "¿Deseas actualizar tu sistema? (y/n): " comando
 
 if [ "$comando" = "y" ]; then
-      apt update
-      apt upgrade -y
-      apt autoremove -y
-      echo "Actualizacion completada"
-
+    echo "Iniciando actualización del sistema..."
+    sudo apt update
+    sudo apt upgrade -y
+    sudo apt autoremove -y
+    sudo apt autoclean -y
+    echo "✅ Actualización completada con éxito."
 elif [ "$comando" = "n" ]; then
-     echo "Actualizacion abortada"
-     exit
-
+    echo "❌ Actualización cancelada por el usuario."
+    exit 0
+else
+    echo "⚠️ Opción no válida. Usa 'y' o 'n'."
+    exit 1
 fi
