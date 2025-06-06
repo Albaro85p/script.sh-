@@ -1,10 +1,10 @@
-# 🔄 Linux System Updater Script
+#  Linux System Updater Script
 
 A simple and interactive **Bash script** that helps you safely update your **Debian-based Linux system** (Kali, Ubuntu, Parrot, etc.) with just one command.
 
 ---
 
-## ✅ Features
+##  Features
 
 - Asks for user confirmation before updating  
 - Runs essential system maintenance commands:
@@ -17,7 +17,7 @@ A simple and interactive **Bash script** that helps you safely update your **Deb
 
 ---
 
-## 🚀 How to Use
+##  How to Use
 
 ```bash
 git clone https://github.com/your-user/linux-updater.git
